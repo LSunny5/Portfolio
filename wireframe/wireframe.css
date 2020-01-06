@@ -240,14 +240,14 @@ footer a{
 
     /*portfolio query*/
     .portfolioSS {
-        margin: 20px 20px;
+        margin: 20px auto;
         position: relative;
         top: 50px;
+        width: 75%;
     }
 
     .navigateButtons {
-        position: relative;
-        top: 50px;
+        display: none;
     }
 
     .nButton{
