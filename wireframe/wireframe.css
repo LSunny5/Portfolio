@@ -83,11 +83,56 @@ h1 {
     margin: 15px;
 }
 
+.portfolioSS {
+    border: 1px solid black;
+    margin: 15px;
+    padding: 15px;
+}
 
+.pImage {
+    height: 50%;
+    margin: 10px auto;
+}
 
+.portfolioDescription {
+    font-size: 15px;
+    margin: 10px 5px 20px 5px;
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+}
 
+.linkButtons {
+    margin: 30px;
+}
 
+.navigateButtons {
+    margin: 15px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
 
+.nButton {
+    height: 50px;
+    width: 30%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.pageNo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+}
+
+.pageNo span {
+    margin: 5px;
+}
 
 
 /*about me page CSS*/
@@ -127,6 +172,10 @@ footer a{
 }
 
 @media only screen and (min-width: 600px) {
+    body {
+        margin: 10px auto 0;
+    }
+    
     .startHeader{
         font-size: 20px;
         border: none;
@@ -157,7 +206,7 @@ footer a{
     }
  
     .startButton {
-        margin: 30px;
+        margin: 30px auto 0;
         width: 30%;
         height: 75px;
     }
@@ -168,6 +217,7 @@ footer a{
         top: 325px;
     }
 
+    /*navbar Query*/
     .navHeader{
         background: lightgray;
         width: 100%;
@@ -188,8 +238,21 @@ footer a{
 
     }
 
+    /*portfolio query*/
+    .portfolioSS {
+        margin: 20px 20px;
+        position: relative;
+        top: 50px;
+    }
 
+    .navigateButtons {
+        position: relative;
+        top: 50px;
+    }
 
+    .nButton{
+        width: 200px;
+    }
 
 
     /*about me media query*/
@@ -208,5 +271,10 @@ footer a{
         border: 1px solid black;
         width: 50%;
         margin: 10px auto;
+    }
+
+    footer {
+        position: relative;
+        top: 50px;
     }
 }
