@@ -111,25 +111,6 @@ h1 {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*portfolio CSS*/
 .techList {
     margin: 15px;
@@ -221,6 +202,11 @@ h1 {
 
 
 
+
+
+
+
+
 /*footer CSS*/
 footer{
     text-align: center;
@@ -236,7 +222,8 @@ footer a{
     font-family: 'Solway', serif;
 }
 
-/*Table Breakpoint*/
+/*******************************/
+/*Tablet Breakpoint*/
 @media only screen and (min-width: 480px) {
     body {
         margin: 10px auto 0;
@@ -246,7 +233,7 @@ footer a{
 
 
 
-    
+
     
 
 
@@ -257,56 +244,66 @@ footer a{
 
 
 
-
+/*******************************/
 /*Large Screen breakpoint*/
 @media only screen and (min-width: 768px) {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    .startImage {
-        width: 350px;
-        height: 300px;
-    }
-
     h1 {
-        text-align: center;
+        margin: 30px 10px 50px;
+        padding: 10px;
+        font-family: 'Spectral SC', serif;
         font-size: 50px;
     }
 
     .intro {
-        margin: 20px;
+        margin: 30px auto 50px;
         padding: 15px;
+        font-family: 'Karma', serif;
         font-size: 18px;
     }
 
+    .startImage {
+        width: 350px;
+        height: 300px;
+        margin: 10px;
+    }
+
     .buttons {
-        margin: 25px 15px 0;
+        margin: 10px 15px 30px;
         padding: 25px;
         flex-direction: row;
         justify-content: space-evenly;
-
     }
 
     .startButton {
-        margin: 30px auto 0;
-        width: 30%;
+        margin: 30px auto;
+        width: 225px;
         height: 75px;
     }
 
 
 
 
+
+
+
+
+
+
+
+
+
+/*start page CSS
+
+
+
+
+
+
+
+
+
+
+*/
 
 
 
