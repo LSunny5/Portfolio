@@ -1,3 +1,388 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: url(images/miniskybg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    text-align: center;
+    margin: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.tab {
+    text-indent: 30px;
+}
+
+/*main body css*/
+main {
+    text-align: center;
+}
+
+/*start page CSS*/
+h1 {
+    margin: 30px 10px 0;
+    padding: 10px;
+    font-family: 'Spectral SC', serif;
+}
+
+.intro {
+    margin: 15px;
+    padding: 15px;
+    font-family: 'Karma', serif;
+}
+
+.buttons {
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.startButton {
+    width: 50%;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background: url('images/greenwatercolor.jpg');
+    background-size: 100%;
+    font-size: 20px;
+    font-family: 'Artifika', serif;
+}
+
+.startImage {
+    width: 250px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*header CSS*/
+.startHeader, .navHeader {
+    display: inline-flex;
+    border-bottom: 3px solid black;
+    justify-content: space-around;
+    width: 90%;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.startHeader a, .navHeader a {
+    font-size: 14px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.navHeader {
+    margin: 0;
+    padding: 10px;
+    height: 50px;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*portfolio CSS*/
+.techList {
+    margin: 15px;
+}
+
+.portfolioSS {
+    border: 1px solid black;
+    margin: 15px;
+    padding: 15px;
+}
+
+.pImage {
+    height: 50%;
+    margin: 10px auto;
+}
+
+.portfolioDescription {
+    font-size: 15px;
+    margin: 10px 5px 20px 5px;
+    border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+}
+
+.linkButtons {
+    margin: 30px;
+}
+
+.navigateButtons {
+    margin: 15px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.nButton {
+    height: 50px;
+    width: 30%;
+    padding: 10px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.pageNo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 12px;
+}
+
+.pageNo span {
+    margin: 5px;
+}
+
+
+/*about me page CSS*/
+.aboutMe {
+    margin: 5px;
+    padding: 10px;
+}
+
+.bio{
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 14px;
+
+}
+
+.socialMediaLinks {
+    margin: 30px auto 20px;
+    border: 1px solid black;
+    width: 60%;
+}
+
+.email {
+    color: blue;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*footer CSS*/
+footer{
+    text-align: center;
+    font-size: 11px;
+    margin-top: 5px;
+    font-family: 'Solway', serif;
+}
+
+footer a{
+    color: blue;
+    text-decoration: underline;
+    margin: 5px;
+    font-family: 'Solway', serif;
+}
+
+/*Table Breakpoint*/
+@media only screen and (min-width: 480px) {
+    body {
+        margin: 10px auto 0;
+        padding: 30px;
+    }
+
+
+
+
+    
+    
+
+
+
+}
+
+
+
+
+
+
+/*Large Screen breakpoint*/
+@media only screen and (min-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .startImage {
+        width: 350px;
+        height: 300px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .intro {
+        margin: 20px;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .buttons {
+        margin: 25px 15px 0;
+        padding: 25px;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+
+    .startButton {
+        margin: 30px auto 0;
+        width: 30%;
+        height: 75px;
+    }
+
+
+
+
+
+
+
+
+    
+    .startHeader{
+        font-size: 20px;
+        border: none;
+        margin: 30px 50px 50px;
+    }
+
+    .startHeader a {
+        display: none;
+    }
+
+
+
+
+
+
+
+    /*navbar Query*/
+    .navHeader{
+        background: lightgray;
+        width: 100%;
+        position: fixed;
+        border-bottom: none;
+        margin: 0;
+        justify-content: flex-end;
+    }
+
+    .navImage {
+        position: absolute; 
+        left: 10px;
+        top: 15px;
+    }
+
+    .navHeader a {
+        padding: 10px;
+
+    }
+
+    /*portfolio query*/
+    .portfolioSS {
+        margin: 20px auto;
+        position: relative;
+        top: 50px;
+        width: 75%;
+    }
+
+    .navigateButtons {
+        display: none;
+    }
+
+    .nButton{
+        width: 200px;
+    }
+
+
+    /*about me media query*/
+
+    .bio {
+         margin: 50px 20px 10px;
+         border: none;
+    }
+
+    .socialMediaLinks {
+        border: none;
+
+    }
+
+    .contact {
+        border: 1px solid black;
+        width: 50%;
+        margin: 10px auto;
+    }
+
+
 }
