@@ -103,30 +103,46 @@ h1 {
 /*portfolio CSS*/
 .heading {
     font-size: 20px;
-    margin: 5px;
+    margin: 0;
 }
 
 .techList {
     margin: 5px auto;
     border: 1px solid black;
+    border-radius: 20px;
+    background: rgb(182, 222, 247);
     width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+
+
+
+}
+
+.techList img{
+    height: 15px;
+    margin: 3px;
 }
 
 .portfolioSS {
     border: 1px solid black;
     margin: 5px 15px 10px;
-    padding: 15px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: space-evenly;
+    border-radius: 30px;
+    height: 80%;
 }
 
 .pImage {
     width: 90%;
-    padding: 60px 100px;
+    
     background: gray;
-    margin: 5px auto 15px;
+    margin: 5px auto;
     border: 2px solid black;
 }
 
@@ -134,8 +150,11 @@ h1 {
     font-size: 14px;
     margin: 10px auto;
     border: 1px dotted gray;
-    padding: 5px;
+    padding: 10px;
     text-align: left;
+    background: white;
+    border-radius: 20px;
+    font-family: 'Karma', serif;
 }
 
 .linkButtons {
@@ -155,8 +174,10 @@ h1 {
     width: 30%;
     padding: 10px;
     margin: 5px;
-    font-size: 14px;
-    border-radius: 10px;
+    font-size: 16px;
+    border-radius: 100px;
+    font-family: 'Artifika', serif;
+    border: 2px solid black;
 }
 
 .pageNo {
@@ -165,6 +186,7 @@ h1 {
     justify-content: space-around;
     align-items: center;
     font-size: 12px;
+    font-family: 'Karma', serif;
 }
 
 .pageNo span {
@@ -178,7 +200,7 @@ h1 {
 }
 
 .aboutHeading{
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Spectral SC', serif;
     margin: 0 10px;
     color: midnightblue;
@@ -275,6 +297,27 @@ footer a{
 .portfolio3 {
     display: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*******************************/
 /*Tablet Breakpoint*/
