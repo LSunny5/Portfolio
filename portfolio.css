@@ -11,7 +11,6 @@
 
 body {
     text-align: center;
-    margin: 10px;
 }
 
 .hide {
@@ -22,6 +21,26 @@ body {
     text-indent: 30px;
 }
 
+/*header CSS*/
+header {
+    display: inline-flex;
+    border-bottom: 3px solid black;
+    justify-content: space-around;
+    width: 90%;
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+    height: 50px;
+    left: 0;
+    top: 0;
+}
+
+a{
+    font-size: 14px;
+    color: blue;
+    text-decoration: underline;
+}
+
 /*main body css*/
 main {
     text-align: center;
@@ -29,15 +48,21 @@ main {
 
 /*start page CSS*/
 h1 {
-    margin: 30px 10px 0;
+    margin: 20px 10px 10px;
     padding: 10px;
     font-family: 'Spectral SC', serif;
+    font-size: 50px;
 }
 
 .intro {
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 15px;
     font-family: 'Karma', serif;
+    font-size: 18px;
+}
+
+.startImage {
+    width:60%;
 }
 
 .buttons {
@@ -50,88 +75,53 @@ h1 {
 
 .startButton {
     width: 50%;
-    margin: 15px;
+    margin: 10px;
     padding: 15px;
-    border-radius: 10px;
-    background: url('images/greenwatercolor.jpg');
-    background-size: 100%;
+    border: 1px solid midnightblue;
     font-size: 20px;
     font-family: 'Artifika', serif;
+    color: midnightblue;
+    border-radius: 30px;
 }
 
-.startImage {
-    width: 225px;
-    height: 175px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*header CSS*/
-.startHeader, .navHeader {
-    display: inline-flex;
-    border-bottom: 3px solid black;
-    justify-content: space-around;
-    width: 90%;
-    font-size: 18px;
-    margin: 10px;
-    padding: 10px;
-}
-
-.startHeader a, .navHeader a {
-    font-size: 14px;
-    color: blue;
-    text-decoration: underline;
-}
-
-.navHeader {
-    margin: 0;
-    padding: 10px;
-    height: 50px;
-    left: 0;
-    top: 0;
-}
-
+/*background: url('images/greenwatercolor.jpg');
+    background-size: 100%;*/
 
 /*portfolio CSS*/
+.heading {
+    font-size: 20px;
+    margin: 10px;
+}
+
 .techList {
-    margin: 15px;
+    margin: 5px auto;
+    border: 1px solid black;
+    width: 75%;
 }
 
 .portfolioSS {
     border: 1px solid black;
-    margin: 15px;
+    margin: 5px 15px 10px;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: space-evenly;
 }
 
 .pImage {
-    height: 50%;
-    margin: 10px auto;
+    width: 90%;
+    padding: 60px 100px;
+    background: gray;
+    margin: 5px auto 15px;
+    border: 2px solid black;
 }
 
 .portfolioDescription {
-    font-size: 15px;
-    margin: 10px 5px 20px 5px;
-    border: 1px solid black;
-    padding: 15px;
+    font-size: 14px;
+    margin: 10px auto;
+    border: 1px dotted gray;
+    padding: 5px;
     text-align: left;
 }
 
@@ -153,6 +143,7 @@ h1 {
     padding: 10px;
     margin: 5px;
     font-size: 14px;
+    border-radius: 10px;
 }
 
 .pageNo {
@@ -167,10 +158,9 @@ h1 {
     margin: 5px;
 }
 
-
-/*about me page CSS*/
+/*about me page */
 .aboutMe {
-    margin: 5px;
+    margin: 25px 15px 0;
     padding: 10px;
 }
 
@@ -178,7 +168,10 @@ h1 {
     border: 2px solid black;
     padding: 10px;
     font-size: 14px;
+}
 
+.contact {
+    margin: 30px 15px 0;
 }
 
 .socialMediaLinks {
@@ -192,148 +185,135 @@ h1 {
     text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*footer CSS*/
 footer{
     text-align: center;
-    font-size: 11px;
-    margin-top: 5px;
+    font-size: 10px;
+    margin: 10px;
     font-family: 'Solway', serif;
 }
 
 footer a{
     color: blue;
     text-decoration: underline;
-    margin: 5px;
     font-family: 'Solway', serif;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.footerlink {
+    font-size: 10px;
+}
+
+.portfolio2{
+    display: none;
+}
+
+.portfolio3 {
+    display: none;
 }
 
 /*******************************/
 /*Tablet Breakpoint*/
 @media only screen and (min-width: 480px) {
-    body {
-        margin: 10px auto 0;
-        padding: 30px;
+    /*start screen*/
+    h1 {
+        margin: 30px auto;
+    }
+    
+    .intro {
+        margin: 20px;
     }
 
+    .startImage {
+        width: 40%;
+    }
 
+    .buttons {
+        margin: 20px;
+    }
 
+    .startButton {
+        width: 40%;
+    }
 
+    /*portfolio*/
+    .techList {
+        width: 50%;
+    }
 
-    
+    .heading{
+        font-size: 30px;
+    }
 
+    .portfolioDescription {
+        font-size: 16px;
+    }
 
+    .pImage {
+        width: 30%;
+    }
 
+    /*about me*/
+    .bio {
+        margin: 50px 20px 35px;
+        border: none;
+   }
+
+   .contact {
+       border: 1px solid black;
+       width: 60%;
+       margin: 10px auto;
+   }
+
+   .socialMediaLinks {
+        border: none;
+    }
 }
-
-
-
-
 
 /*******************************/
 /*Large Screen breakpoint*/
 @media only screen and (min-width: 768px) {
+    /*start Screen*/
     h1 {
-        margin: 30px 10px 50px;
-        padding: 10px;
+        text-align: center;
+        margin: 50px 10px 30px;
         font-family: 'Spectral SC', serif;
-        font-size: 50px;
+        font-size: 70px;
+    }
+
+    .buttons {
+        margin: 30px 10px 0;
+        padding: 25px 10px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    header{
+        font-size: 20px;
+        border: none;
+        margin: 30px 50px 50px;
     }
 
     .intro {
-        margin: 30px auto 50px;
+        margin: 30px;
         padding: 15px;
         font-family: 'Karma', serif;
         font-size: 20px;
     }
 
     .startImage {
-        width: 350px;
-        height: 300px;
-        margin: 10px;
+        width: 25%;
     }
-
-    .buttons {
-        margin: 10px 15px 30px;
-        padding: 25px;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
+ 
     .startButton {
-        margin: 30px auto;
-        width: 225px;
+        margin: 15px auto;
+        width: 30%;
         height: 75px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/*start page CSS
-
-
-
-
-
-
-
-
-
-
-*/
-
-
-
-
-    
-    .startHeader{
-        font-size: 20px;
-        border: none;
-        margin: 30px 50px 50px;
-    }
-
-    .startHeader a {
-        display: none;
-    }
-
-
-
-
-
-
-
-    /*navbar Query*/
-    .navHeader{
+    /*header*/
+    header{
         background: lightgray;
         width: 100%;
         position: fixed;
@@ -348,45 +328,64 @@ footer a{
         top: 15px;
     }
 
-    .navHeader a {
+    header a {
         padding: 10px;
-
     }
 
-    /*portfolio query*/
+    /*portfolio*/
     .portfolioSS {
-        margin: 20px auto;
-        position: relative;
-        top: 50px;
-        width: 75%;
+        margin: 70px 125px 20px;
+    }
+
+    .portfolioDescription {
+        font-size: 15px;
+        margin: 20px 10px;
     }
 
     .navigateButtons {
         display: none;
     }
 
-    .nButton{
-        width: 200px;
+    a {
+        font-size: 16px;
     }
 
-
-    /*about me media query*/
-
-    .bio {
-         margin: 50px 20px 10px;
-         border: none;
+    .pImage {
+        height: 350px;
+        margin: 15px auto;
     }
 
-    .socialMediaLinks {
-        border: none;
-
-    }
-
+    /*about me*/
     .contact {
-        border: 1px solid black;
         width: 50%;
-        margin: 10px auto;
     }
 
+    /*extra entries*/
+    .portfolio2 {
+        display: block;
+    }
 
+    .portfolio3{
+        display: block;
+    }
+
+    .portfolioSSE {
+        margin: 40px 125px 20px;
+        border: 1px solid black;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: space-evenly;
+    }
 }
+
+
+    
+
+
+/*
+font-family: 'Karma', serif;
+font-family: 'Artifika', serif;
+font-family: 'Spectral SC', serif;
+*/
