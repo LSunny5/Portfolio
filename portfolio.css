@@ -298,30 +298,9 @@ footer a{
     display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*******************************/
 /*Tablet Breakpoint*/
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 500px) {
     /*start screen*/
     h1 {
         margin: 30px auto;
@@ -329,6 +308,7 @@ footer a{
     
     .intro {
         margin: 20px;
+        background: none;
     }
 
     .startImage {
@@ -350,27 +330,86 @@ footer a{
 
     .heading{
         font-size: 30px;
+        margin: 15px;
+    }
+
+    .portfolioSS {
+        padding: 25px;
+        width: 80%;
+        margin: 10px auto;
     }
 
     .portfolioDescription {
         font-size: 16px;
+        margin: 10px 30px;
     }
 
     .pImage {
+        width: 90%;
+    }
+
+    .pageLinks {
+        margin: 10px;
+    }
+
+    .pageLinks a {
+        padding: 10px;
+    }
+
+    .navigateButtons {
+        width: 70%;
+        margin: 15px auto 0;
+    }
+
+    .pageNo {
+        font-size: 20px;
+        font-family: 'Karma', serif;
+        background: none;
+    }
+
+    .nButton {
         width: 30%;
+        align-items: center;
     }
 
     /*about me*/
+    .aboutHeading {
+        text-decoration: none;
+        font-size: 40px;
+        padding: 0 auto 10px;
+        margin: 0;
+    }
+
     .bio {
-        margin: 50px 20px 35px;
+        margin: 5px 20px 0px;
         border: none;
    }
 
-   .contact {
-       border: 1px solid black;
-       width: 60%;
-       margin: 10px auto;
+   .bioP {
+       margin: 0;
+       font-size: 18px;
+       background: none;
+       padding: 0 auto 10px;
    }
+
+   .contactTitle{
+        background: white;
+        border-radius: 30px;
+   }
+
+   .contact {
+       background: white;
+       width: 75%;
+       margin: 0 auto 30px;
+       border-radius: 50px;
+       padding: 20px;
+       border: 1px solid #EDDD6E;
+   }
+
+   p {
+    margin: 0 auto 15px;
+    background: white;
+    }
 
    .socialMediaLinks {
         border: none;
@@ -379,7 +418,7 @@ footer a{
 
 /*******************************/
 /*Large Screen breakpoint*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
     /*start Screen*/
     h1 {
         text-align: center;
@@ -417,6 +456,23 @@ footer a{
         width: 30%;
         height: 75px;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 
     /*header*/
     header{
