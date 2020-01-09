@@ -41,17 +41,31 @@ header {
 }
 
 .navImage {
-    width: 50px;
-    background: url('/images/tinySLlogo.png');
+    background: none;
+    border: none;
+    padding: 0;
+    
+    background: url('images/tinySLlogo.png');
     background-size: 100%;
+    border-radius: 50%;
+    width: 50px;
+    height: 45px;
+    cursor: pointer;
 }
 
-a{
-    font-size: 16px;
+.aboutLink, .portfolioLink {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'Artifika', serif;
     color: blue;
     text-decoration: underline;
-    font-family: 'Artifika', serif;
-    background: none;
+    cursor: pointer;
+
+}
+
+a:visited{
+    color: darkblue;
 }
 
 /*main body css*/
@@ -95,7 +109,19 @@ h1 {
     font-family: 'Artifika', serif;
     color: midnightblue;
     border-radius: 30px;
+    cursor: pointer;
 }
+
+.startButton:hover {
+    background: goldenrod;
+    font-size: 18px;
+}
+
+.startButton:active {
+    background: green;
+}
+
+
 
 /*background: url('images/greenwatercolor.jpg');
     background-size: 100%;*/
@@ -180,6 +206,12 @@ h1 {
     border: 2px solid black;
 }
 
+.pageLinks a{
+    background: none;
+    font-family: 'Karma', serif;
+    font-size: 16px;
+}
+
 .pageNo {
     display: flex;
     flex-direction: row;
@@ -241,7 +273,7 @@ h1 {
 .socialMediaLinks {
     margin: 10px auto;
     padding: 10px;
-    width: 75%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -253,6 +285,12 @@ h1 {
 
 .socialMediaLinks img {
     width: 35px;
+    
+}
+
+.socialMediaLinks a:hover {
+    border: 2px solid black;
+    border-radius: 50%;
 }
 
 .email {
@@ -406,13 +444,25 @@ footer a{
        border: 1px solid #EDDD6E;
    }
 
-   p {
+   a{
+       background: white;
+   }
+
+    p {
     margin: 0 auto 15px;
     background: white;
     }
 
    .socialMediaLinks {
         border: none;
+    }
+
+    .socialMediaLinks img{
+        background: white;
+    }
+
+    footer a{
+        background: none;
     }
 }
 
@@ -434,11 +484,7 @@ footer a{
         justify-content: space-evenly;
     }
     
-    header{
-        font-size: 20px;
-        border: none;
-        margin: 30px 50px 50px;
-    }
+
 
     .intro {
         margin: 30px;
@@ -458,50 +504,78 @@ footer a{
     }
 
 
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
 
     /*header*/
     header{
-        background: lightgray;
-        width: 100%;
-        position: fixed;
-        border-bottom: none;
-        margin: 0;
+        width: 90%;
+        flex-direction: row;
         justify-content: flex-end;
+        
+        border-bottom: 2px solid darkgreen;
+        
+    }
+
+    .nav button {
+        margin: 0 8px;
     }
 
     .navImage {
-        position: absolute; 
-        left: 10px;
-        top: 15px;
+       order: -1;
+       align-self: left;
     }
 
-    header a {
-        padding: 10px;
-    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     /*portfolio*/
     .portfolioSS {
-        margin: 70px 125px 20px;
+        margin: 10px auto 30px;
+        padding: 5px;
+    }
+
+    .techList {
+        border: none;
+        background: none;
+        justify-content: flex-end; 
+        width: 60%;
+    }
+
+    .techList img{
+        margin: 0 5px;
+    }
+
+    .heading {
+        margin: 0;
+        order: -1;
     }
 
     .portfolioDescription {
         font-size: 15px;
-        margin: 20px 10px;
+        margin: 10px 30px 0;
     }
 
     .navigateButtons {
@@ -513,14 +587,41 @@ footer a{
     }
 
     .pImage {
-        height: 350px;
-        margin: 15px auto;
+        width: 60%;
+
     }
 
+
+
+
+
     /*about me*/
+    .aboutMe{
+        width: 80%;
+    }
+
+    .contactTitle{
+        margin: 0 auto 20px;
+    }
     .contact {
         width: 50%;
+
+
     }
+
+    .aboutHeading {
+        margin: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
 
     /*extra entries*/
     .portfolio2 {
