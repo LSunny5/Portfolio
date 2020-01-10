@@ -47,8 +47,6 @@ function logoClick() {
     })
 }
 
-
-
 //Javascript Functions to run
 function begin() {
     startPage();
