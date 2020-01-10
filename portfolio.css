@@ -10,7 +10,10 @@
 }
 
 body {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .hide {
@@ -21,71 +24,32 @@ body {
     text-indent: 30px;
 }
 
-/*header CSS*/
-header {
-    display: inline-flex;
-    border-bottom: 3px solid black;
-    align-items: center;
-    justify-content: space-around;
-
-
-    margin: 5px auto;
-
-    width: 80%;
-    font-size: 18px;
-    margin: 5px;
-    padding: 10px;
-    height: 50px;
-    left: 0;
-    top: 0;
-}
-
-.navImage {
-    background: none;
-    border: none;
-    padding: 0;
-    
-    background: url('images/tinySLlogo.png');
-    background-size: 100%;
-    border-radius: 50%;
-    width: 50px;
-    height: 45px;
-    cursor: pointer;
-}
-
-.aboutLink, .portfolioLink {
-    background: none;
-    border: none;
-    padding: 0;
-    font-family: 'Artifika', serif;
-    color: blue;
-    text-decoration: underline;
-    cursor: pointer;
-
-}
-
-a:visited{
-    color: darkblue;
-}
-
 /*main body css*/
 main {
     text-align: center;
 }
 
 /*start page CSS*/
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90vw;
+}
+
 h1 {
-    margin: 20px 10px 10px;
     padding: 10px;
+    margin: 20px auto 0;
     font-family: 'Spectral SC', serif;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .intro {
-    margin: 5px;
-    padding: 15px;
+    padding: 20px;
     font-family: 'Karma', serif;
     font-size: 18px;
+    background: none;
 }
 
 .startImage {
@@ -93,7 +57,7 @@ h1 {
 }
 
 .buttons {
-    margin: 5px;
+    width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -121,14 +85,77 @@ h1 {
     background: green;
 }
 
+/*header CSS*/
+header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 3px solid darkgreen;
+    margin: 6px auto;
+    padding: 3px;
+    height: 55px;
+    width: 90%;
+}
 
+.navImage {
+    background: none;
+    border: none;
+    padding: 0;
+    background: url('images/tinySLlogo.png');
+    background-size: 100%;
+    border-radius: 50%;
+    width: 60px;
+    height: 50px;
+    cursor: pointer;
+}
 
-/*background: url('images/greenwatercolor.jpg');
-    background-size: 100%;*/
+.navImage:hover {
+    background: url('images/tinySLlogor1.jpg');
+    background-size: 100%;
+    transition: 1s;
+}
+
+.aboutLink, .portfolioLink {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Artifika', serif;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nav button:hover {
+    color: darkgreen;
+}
+
+.nav button:active {
+    color: orange;
+}
 
 /*portfolio CSS*/
-.heading {
-    font-size: 20px;
+.portfolioBox {
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portfolioSS {
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 6px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pHeading {
+    font-size: 23px;
     margin: 0;
 }
 
@@ -137,14 +164,10 @@ h1 {
     border: 1px solid black;
     border-radius: 20px;
     background: rgb(182, 222, 247);
-    width: 75%;
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
-
-
-
 }
 
 .techList img{
@@ -152,21 +175,8 @@ h1 {
     margin: 3px;
 }
 
-.portfolioSS {
-    border: 1px solid black;
-    margin: 5px 15px 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: space-evenly;
-    border-radius: 30px;
-    height: 80%;
-}
-
-.pImage {
+.ssImage {
     width: 90%;
-    
     background: gray;
     margin: 5px auto;
     border: 2px solid black;
@@ -174,24 +184,48 @@ h1 {
 
 .portfolioDescription {
     font-size: 14px;
+    font-family: 'Karma', serif;
     margin: 10px auto;
     border: 1px dotted gray;
     padding: 10px;
     text-align: left;
     background: white;
     border-radius: 20px;
-    font-family: 'Karma', serif;
 }
 
-.linkButtons {
-    margin: 30px;
+.pageLinks a{
+    background: none;
+    font-family: 'Karma', serif;
+    font-size: 15px;
+}
+
+.pageLinks span{
+    background: none;
+}
+
+a{
+    cursor: pointer;
+    background: none;
+}
+
+a:visited{
+    color: darkblue;
+}
+
+a:hover{
+    color: orange;
+}
+
+a:active{
+    font-style: bolder;
+    color: darkgreen;
 }
 
 .navigateButtons {
-    margin: 15px auto;
+    margin: 5px auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -201,15 +235,10 @@ h1 {
     padding: 10px;
     margin: 5px;
     font-size: 16px;
-    border-radius: 100px;
     font-family: 'Artifika', serif;
     border: 2px solid black;
-}
-
-.pageLinks a{
-    background: none;
-    font-family: 'Karma', serif;
-    font-size: 16px;
+    border-radius: 100px;
+    color: gray;
 }
 
 .pageNo {
@@ -226,54 +255,58 @@ h1 {
 }
 
 /*about me page */
-.aboutMe {
-    margin: 0 15px;
-    padding: 0 10px;
+.aboutMeBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.bio{
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .aboutHeading{
     font-size: 25px;
     font-family: 'Spectral SC', serif;
-    margin: 0 10px;
     color: midnightblue;
-    text-decoration: underline;
+    margin: 0;
     padding: 3px;
-    
-}
-
-.bio{
-    margin: 5px auto 0;
-    padding: 10px;
-    font-size: 14px;
-    
-    /*background: #F8FD89;
-    background: #EDDD6E;
-    border: 2px solid #EDDD6E;
-
-    
-
-    */
-
-    
-    color: midnightblue;
 }
 
 .bioP{
     background: #F8FD89;
     text-align: left;
-    margin: 0;
     border-radius: 20px;
     padding: 20px;
+    font-size: 14px;   
+    font-family: 'Karma', serif;
+    color: midnightblue;
 }
 
 .contact {
-    margin: 15px 15px 0;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.email {
+    font-family: 'Karma', serif;
+    padding: 10px;
 }
 
 .socialMediaLinks {
-    margin: 10px auto;
-    padding: 10px;
-    width: 80%;
+    margin: 8px auto;
+    padding: 15px;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -285,184 +318,114 @@ h1 {
 
 .socialMediaLinks img {
     width: 35px;
-    
-}
+ }
 
 .socialMediaLinks a:hover {
     border: 2px solid black;
     border-radius: 50%;
 }
 
-.email {
-    color: blue;
-    text-decoration: underline;
-}
-
-p{
-    font-family: 'Karma', serif;
-    padding: 10px;
-}
-
 /*footer CSS*/
 footer{
     text-align: center;
     font-size: 10px;
-    margin: 10px;
-    font-family: 'Solway', serif;
-
     padding: 10px;
-
+    font-family: 'Solway', serif;
 }
 
 footer a{
     color: blue;
     text-decoration: underline;
-    font-family: 'Solway', serif;
-    font-size: 10px;
     padding: 5px;
-
-
+    background: none;
 }
 
-.footerlink {
-    font-size: 10px;
-}
-
-.portfolio2{
-    display: none;
-}
-
-.portfolio3 {
-    display: none;
+/*added CSS for JavaScript*/
+/*orange button appearance for page user is currently on*/
+.activePage {
+    color: darkgreen;
+    background: orange;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 /*******************************/
 /*Tablet Breakpoint*/
 @media only screen and (min-width: 500px) {
     /*start screen*/
-    h1 {
-        margin: 30px auto;
+    h1{
+        font-size: 50px;
     }
     
-    .intro {
-        margin: 20px;
-        background: none;
-    }
-
-    .startImage {
-        width: 40%;
-    }
-
-    .buttons {
-        margin: 20px;
-    }
-
-    .startButton {
+    .startImage{
         width: 40%;
     }
 
     /*portfolio*/
-    .techList {
-        width: 50%;
-    }
-
-    .heading{
-        font-size: 30px;
-        margin: 15px;
-    }
-
     .portfolioSS {
-        padding: 25px;
-        width: 80%;
-        margin: 10px auto;
-    }
-
-    .portfolioDescription {
-        font-size: 16px;
-        margin: 10px 30px;
-    }
-
-    .pImage {
         width: 90%;
     }
 
-    .pageLinks {
-        margin: 10px;
+    .techList{
+        width: 30%;
     }
 
-    .pageLinks a {
-        padding: 10px;
-    }
-
-    .navigateButtons {
-        width: 70%;
-        margin: 15px auto 0;
+    .portfolioDescription{
+        width: 90%;
     }
 
     .pageNo {
-        font-size: 20px;
-        font-family: 'Karma', serif;
         background: none;
-    }
-
-    .nButton {
-        width: 30%;
         align-items: center;
-    }
-
-    /*about me*/
-    .aboutHeading {
-        text-decoration: none;
-        font-size: 40px;
-        padding: 0 auto 10px;
         margin: 0;
     }
 
-    .bio {
-        margin: 5px 20px 0px;
+    /*about me*/
+     .aboutHeading{
+        margin: 10px;
+    }
+    
+    .bio{
+        width: 90%;
+        margin: 15px;
         border: none;
-   }
+    }
 
-   .bioP {
-       margin: 0;
-       font-size: 18px;
-       background: none;
-       padding: 0 auto 10px;
-   }
+    .bioP {
+        margin: 0;
+        font-size: 16px;
+        background: none;
+        padding: 10px auto;
+    }
 
-   .contactTitle{
+    .contact{
+        margin: 15px;
         background: white;
+        width: 75%;
+        border-radius: 50px;
+        padding: 10px;
+        border: 1px solid #EDDD6E;
+    }
+
+    .contactTitle{
         border-radius: 30px;
-   }
-
-   .contact {
-       background: white;
-       width: 75%;
-       margin: 0 auto 30px;
-       border-radius: 50px;
-       padding: 20px;
-       border: 1px solid #EDDD6E;
-   }
-
-   a{
-       background: white;
+        background: white;
    }
 
     p {
-    margin: 0 auto 15px;
-    background: white;
+        background: white;
     }
 
-   .socialMediaLinks {
+    a{
+        background: white;
+    }
+
+    .socialMediaLinks {
         border: none;
     }
 
     .socialMediaLinks img{
         background: white;
-    }
-
-    footer a{
-        background: none;
     }
 }
 
@@ -471,56 +434,39 @@ footer a{
 @media only screen and (min-width: 800px) {
     /*start Screen*/
     h1 {
-        text-align: center;
-        margin: 50px 10px 30px;
         font-family: 'Spectral SC', serif;
         font-size: 70px;
+        margin: 20px;
     }
 
-    .buttons {
-        margin: 30px 10px 0;
-        padding: 25px 10px;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    
-
-
-    .intro {
-        margin: 30px;
-        padding: 15px;
-        font-family: 'Karma', serif;
-        font-size: 20px;
+    .intro{
+        margin: 10px;
     }
 
     .startImage {
         width: 25%;
+        margin: 30px;
     }
- 
+
+    .buttons {
+        margin: 30px;
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
     .startButton {
         margin: 15px auto;
         width: 30%;
         height: 75px;
     }
 
-
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-
-
     /*header*/
     header{
         width: 90%;
         flex-direction: row;
         justify-content: flex-end;
-        
         border-bottom: 2px solid darkgreen;
-        
     }
 
     .nav button {
@@ -529,32 +475,15 @@ footer a{
 
     .navImage {
        order: -1;
-       align-self: left;
+       position: absolute;
+       top: 4px;
+       left: 5%;
     }
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     /*portfolio*/
     .portfolioSS {
-        margin: 10px auto 30px;
-        padding: 5px;
+        margin: 10px;
+        width: 75%;
     }
 
     .techList {
@@ -568,14 +497,24 @@ footer a{
         margin: 0 5px;
     }
 
-    .heading {
+    .pheading {
         margin: 0;
         order: -1;
+        font-size: 35px;
+    }
+
+    .ssImage {
+        width: 50%;
     }
 
     .portfolioDescription {
         font-size: 15px;
-        margin: 10px 30px 0;
+        margin: 10px auto 0;
+        width: 75%;
+    }
+
+    .pageLinks{
+        margin: 5px;
     }
 
     .navigateButtons {
@@ -586,32 +525,26 @@ footer a{
         font-size: 16px;
     }
 
-    .pImage {
-        width: 60%;
-
+    /*about me*/
+    .bio{
+        margin: 10px;
     }
 
-
-
-
-
-    /*about me*/
-    .aboutMe{
-        width: 80%;
+    .bioP{
+        width: 75%;
+        font-size: 18px;
     }
 
     .contactTitle{
-        margin: 0 auto 20px;
-    }
-    .contact {
-        width: 50%;
-
-
-    }
-
-    .aboutHeading {
         margin: 20px;
     }
+
+    .contact {
+        width: 50%;
+        margin: 10px;
+    }
+
+
 
 
 
