@@ -305,12 +305,12 @@ a:active{
 .socialMediaLinks {
     margin: 8px auto;
     width: 90%;
-
     border: 1px solid gray;
     border-radius: 20px;
     background: white;
-    display: inline-flex;
+    display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 15px;
 }
 
