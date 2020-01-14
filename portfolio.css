@@ -304,24 +304,31 @@ a:active{
 
 .socialMediaLinks {
     margin: 8px auto;
-    padding: 15px;
     width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+
     border: 1px solid gray;
     border-radius: 20px;
     background: white;
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 15px;
 }
 
 .socialMediaLinks img {
-    width: 35px;
+    background: white;
+    display: inline-flex;
+    width: 57px;
+    height: 50px;
+    text-align: center;
+    transition: 0.5s;
+    padding: 10px;
  }
 
 .socialMediaLinks a:hover {
-    border: 2px solid black;
-    border-radius: 50%;
+    color: orange;
+    box-shadow: 0 0 10px orange;
+    text-shadow: 0 0 10px orange;
+    background: orange;
 }
 
 /*footer CSS*/
