@@ -39,25 +39,26 @@ main {
 
 h1 {
     padding: 10px;
-    margin: 20px auto 0;
+    margin: 3vh auto;
     font-family: 'Spectral SC', serif;
-    font-size: 40px;
+    font-size: 6vh;
 }
 
 .intro {
-    padding: 20px;
+    padding: 3vh;
     font-family: 'Karma', serif;
-    font-size: 18px;
+    font-size: 3vh;
     background: none;
 }
 
 .startImage {
     width:60%;
+    margin: 3vh;
 }
 
 .buttons {
     width: 100%;
-    padding: 10px;
+    padding: 2vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,10 +66,10 @@ h1 {
 
 .startButton {
     width: 50%;
-    margin: 10px;
+    margin: 1vh;
     padding: 15px;
     border: 1px solid midnightblue;
-    font-size: 20px;
+    font-size: 3vh;
     font-family: 'Artifika', serif;
     color: midnightblue;
     border-radius: 30px;
@@ -81,7 +82,7 @@ h1 {
 }
 
 .startButton:active {
-    background: green;
+    background: blue;
 }
 
 /*header CSS*/
@@ -126,7 +127,7 @@ header {
 }
 
 .nav button:hover {
-    color: darkgreen;
+    color: blue;
 }
 
 .nav button:active {
@@ -145,7 +146,7 @@ header {
 .portfolioSS {
     border: 1px solid black;
     border-radius: 30px;
-    margin: 3px;
+    margin: 5px;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -217,7 +218,7 @@ a:hover{
 
 a:active{
     font-style: bolder;
-    color: darkgreen;
+    color: blue;
 }
 
 .navigateButtons {
@@ -237,7 +238,25 @@ a:active{
     font-family: 'Artifika', serif;
     border: 2px solid black;
     border-radius: 100px;
+    color: black;
+    cursor: pointer;
+}
+
+.nButton:hover:enabled {
+    background: orange;
+    font-size: 12px;
+}
+
+.nButton:active:enabled {
+    background: blue;
+}
+
+.nButton:disabled {
+    background: none;
     color: gray;
+    outline: gray;
+    cursor: none;
+    pointer-events: none;
 }
 
 .pageNo {
@@ -349,7 +368,7 @@ footer a{
 /*added CSS for JavaScript*/
 /*orange button appearance for page user is currently on*/
 .activePage {
-    color: darkgreen;
+    color: blue;
     background: orange;
     border-radius: 20px;
     padding: 10px;
