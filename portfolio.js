@@ -1,6 +1,6 @@
 'use strict';
 
-let projectNo=0;
+let projectNo = 0;
 
 /*listen for clicks on portfolio and about me links at menu bar*/
 function menuBar() {
@@ -23,33 +23,33 @@ function logoClick() {
 }
 
 /*listening and checking for portfolio page button clicks*/
-function portfolioButtonClick(){
-    $('.portfolioSection').on('click', '.next', function (event){
+function portfolioButtonClick() {   
+    $('.portfolioSection').on('click', '.next', function (event) {
         event.preventDefault();
         projectNo++;
         $('.portfolioBox').empty();
-        return createProject(projectNo);
+        return createProjects(projectNo);
     })
 
-    $('.portfolioSection').on('click', '.prev', function (event){
+    $('.portfolioSection').on('click', '.prev', function (event) {
         event.preventDefault();
         projectNo--;
         $('.portfolioBox').empty();
-        return createProject(projectNo);
+        return createProjects(projectNo);
     })
+    
 }
 
 /*displaying the project info*/
-function createProject(pNumber) {
+function createProjects(pNumber) {
     //enable buttons before check
     $('.next').attr('disabled', false);
     $('.prev').attr('disabled', false);
 
     //disabling buttons
-    if (projectNo <= 0) {
-        //disable button for prev
+    if (pNumber <= 0) {
         $('.prev').attr('disabled', true);
-    } else if (projectNo >= (PROJECTS.length-1)) {
+    } else if (pNumber >= (PROJECTS.length - 1)) {
         $('.next').attr('disabled', true);
     }
 
@@ -65,13 +65,13 @@ function createProject(pNumber) {
             <p class="portfolioDescription tab">${PROJECTS[pNumber].description}</p>
             <div class="pageLinks">
                 <a href="${PROJECTS[pNumber].repo}" target='_blank'>Code</a><span> | </span>
-                <a href="${PROJECTS[pNumber].code}" target='_blank'>Live Page</a>
+                <a href="${PROJECTS[pNumber].livepage}" target='_blank'>Live Page</a>
             </div>
         </section>
     `)
 
     //adding icons for the technologies in the tech list
-    for (let i = 0; i < PROJECTS[pNumber].tech.length ; i++) {
+    for (let i = 0; i < PROJECTS[pNumber].tech.length; i++) {
         if (PROJECTS[pNumber].tech[i] === "html5") {
             $('.techList').append(`<img src="images/tinyHTML5Logo.png" alt="HTML5">`);
         } else if (PROJECTS[pNumber].tech[i] === "css3") {
@@ -80,8 +80,9 @@ function createProject(pNumber) {
             $('.techList').append(`<img src="images/tinyjavascriptlogo.png" alt="JavaScript">`);
         } else if (PROJECTS[pNumber].tech[i] === "jquery") {
             $('.techList').append(`<img src="images/tinyjquerylogo.png" alt="JQuery">`);
-        } 
+        }
     }
+    
 }
 
 /*actions to show portfolio page*/
@@ -94,21 +95,24 @@ function portfolioPage() {
     $('.aboutLink').removeClass('activePage');
     $('footer').show();
 
+    projectNo = 0;
+    $('.portfolioBox').empty();
 
-     //   if ($(this).width() > 800) {
-     //       for (let i = 0; i < PROJECTS.length; i++ ) {
-       //         createProject(i);
-       //     }
-      //  } else {
-            $('.total').html(`${PROJECTS.length}`);
-            projectNo=0;
-            $('.pNumber').html('1');
-            createProject(projectNo);
-            portfolioButtonClick();
-     //   }
-   // })
+    //refresh page if window gets resized
+    $(window).resize(function () {
+        portfolioPage();
+    });
 
-    
+    //layout change depending on screen size
+    if ($(window).width() >= 800) {
+        for (let i = 0; i < PROJECTS.length; i++) {
+            createProjects(i);
+        }
+    } else {
+        $('.total').html(`${PROJECTS.length}`);
+        $('.pNumber').html('1');
+        createProjects(0);
+    }
 }
 
 /*actions to show about me page*/
@@ -139,6 +143,7 @@ function begin() {
     startPage();
     logoClick();
     menuBar();
+    portfolioButtonClick();
 }
 
 $(begin);
