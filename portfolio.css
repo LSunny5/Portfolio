@@ -149,18 +149,6 @@ header {
     align-items: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .portfolioSS {
     border: 1px solid black;
     border-radius: 30px;
@@ -287,6 +275,7 @@ a:active{
     align-items: center;
     font-size: 2.5vh;
     font-family: 'Karma', serif;
+    background: none;
 }
 
 .pageNo span {
@@ -404,71 +393,61 @@ footer a{
     padding: 2vh;
 }
 
-
-
-
-
-
-
-
-
-
-
 /*******************************/
 /*Tablet Breakpoint*/
 @media only screen and (min-width: 600px) {
-    /*start screen*/
-    h1{
-        font-size: 50px;
+    h1 {
+        margin: 2vh;
     }
-    
-    .startImage{
-        width: 40%;
+
+    .startImage {
+        width: 50%;
     }
 
     /*portfolio*/
     .portfolioSS {
         width: 90%;
+        height: 78vh;
     }
 
     .techList{
-        width: 30%;
+        width: 60%;
     }
 
     .portfolioDescription{
         width: 90%;
     }
 
-    .pageNo {
-        background: none;
-        align-items: center;
-        margin: 0;
+    .portfolioDescription {
+        margin: 2vh;
     }
 
-    /*about me*/
-     .aboutHeading{
-        margin: 10px;
+    /*header*/
+    header{
+        height: 77px;
     }
-    
+
+    .aboutLink, .portfolioLink {
+        font-size: 22px;
+    }
+
+    /*about me page*/
     .bio{
         width: 90%;
-        margin: 15px;
+        margin: 2vh;
         border: none;
     }
 
     .bioP {
-        margin: 0;
-        font-size: 16px;
         background: none;
-        padding: 10px auto;
     }
 
     .contact{
-        margin: 15px;
+        margin: 2vh;
         background: white;
         width: 75%;
         border-radius: 50px;
-        padding: 10px;
+        padding: 2vh;
         border: 1px solid #EDDD6E;
     }
 
@@ -500,59 +479,56 @@ footer a{
     body {
         height: 100%;
     }
-
+    
     /*start Screen*/
+    .start {
+        margin: 2vh;
+        height: 90vh;
+    }
     h1 {
-        font-family: 'Spectral SC', serif;
-        font-size: 70px;
-        margin: 20px;
+        margin: 3vh;
     }
-
-    .intro{
-        margin: 10px;
-    }
-
     .startImage {
-        width: 25%;
-        margin: 30px;
+        width: 30%;
     }
 
     .buttons {
-        margin: 30px;
-        padding: 10px;
+        padding: 3vh;
         flex-direction: row;
         justify-content: space-evenly;
     }
     
     .startButton {
-        margin: 15px auto;
-        width: 30%;
-        height: 75px;
+        width: 35%;
     }
 
     /*header*/
     header{
-        width: 90%;
+        width: 95%;
         flex-direction: row;
         justify-content: flex-end;
         border-bottom: 2px solid darkgreen;
+        padding: 2vh;
+        margin: 2vh;
     }
 
-    .nav button {
-        margin: 0 8px;
+    .aboutLink, .portfolioLink {
+        margin: 2vh;
     }
 
     .navImage {
        order: -1;
+       width: 80px;
+       height: 72px;
        position: absolute;
-       top: 4px;
+       top: 2%;
        left: 5%;
     }
 
     /*portfolio*/
     .portfolioSS {
-        margin: 10px;
         width: 75%;
+        height: 100%;
     }
 
     .techList {
@@ -562,54 +538,29 @@ footer a{
         width: 60%;
     }
 
-    .techList img{
-        margin: 0 5px;
-    }
-
     .pheading {
         margin: 0;
         order: -1;
-        font-size: 35px;
     }
 
     .ssImage {
         width: 50%;
     }
-
+    
     .portfolioDescription {
-        font-size: 15px;
-        margin: 10px auto 0;
         width: 75%;
-    }
-
-    .pageLinks{
-        margin: 5px;
     }
 
     .navigateButtons {
         display: none;
     }
 
-    a {
-        font-size: 16px;
-    }
-
     /*about me*/
-    .bio{
-        margin: 10px;
-    }
-
     .bioP{
         width: 75%;
-        font-size: 18px;
-    }
-
-    .contactTitle{
-        margin: 20px;
     }
 
     .contact {
         width: 50%;
-        margin: 10px;
     }
 }

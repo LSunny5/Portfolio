@@ -67,8 +67,9 @@ function createProjects(pNumber) {
                 <a href="${PROJECTS[pNumber].livepage}" target='_blank'>Live Page</a>
             </div>
         </section>`);
-
+    
     //adding icons for the technologies in the tech list
+    $('.techList').empty();
     for (let i = 0; i < PROJECTS[pNumber].tech.length; i++) {
         if (PROJECTS[pNumber].tech[i] === "html5") {
             $('.techList').append(`<img src="images/tinyHTML5Logo.png" alt="HTML5">`);
@@ -79,6 +80,7 @@ function createProjects(pNumber) {
         } else if (PROJECTS[pNumber].tech[i] === "jquery") {
             $('.techList').append(`<img src="images/tinyjquerylogo.png" alt="JQuery">`);
         }
+        console.log('printed');
     };
 }
 
