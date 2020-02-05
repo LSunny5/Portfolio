@@ -37,7 +37,6 @@ function portfolioButtonClick() {
         $('.portfolioBox').empty();
         return createProjects(projectNo);
     })
-    
 }
 
 /*displaying the project info*/
@@ -67,8 +66,7 @@ function createProjects(pNumber) {
                 <a href="${PROJECTS[pNumber].repo}" target='_blank'>Code</a><span> | </span>
                 <a href="${PROJECTS[pNumber].livepage}" target='_blank'>Live Page</a>
             </div>
-        </section>
-    `)
+        </section>`);
 
     //adding icons for the technologies in the tech list
     for (let i = 0; i < PROJECTS[pNumber].tech.length; i++) {
@@ -81,8 +79,7 @@ function createProjects(pNumber) {
         } else if (PROJECTS[pNumber].tech[i] === "jquery") {
             $('.techList').append(`<img src="images/tinyjquerylogo.png" alt="JQuery">`);
         }
-    }
-    
+    };
 }
 
 /*actions to show portfolio page*/
