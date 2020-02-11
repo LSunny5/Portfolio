@@ -19,7 +19,7 @@ const PROJECTS = [
         tech: ['html5', 'css3', 'javascript', 'jquery'], 
         screenshot: 'images/DrugCompareResultScreenSS.png', 
         alt: 'Drug Compare App Result Screen Screenshot',
-        description: 'Try this app to see how much you pay for your pharmacy drug compared to the set standards of the government, manufacturer, and pharmacy.  This quiz is good for anyone who wonders about the pricing of pharamcy drugs.  I built it for my curious family and friends.',
+        description: 'Try this app to see how much you pay for your pharmacy drug compared to the set standards of the government, manufacturer, and pharmacy.  This app is good for anyone who wonders about the pricing of pharamcy drugs.  I built it for my curious family and friends.',
         repo: 'https://github.com/LSunny5/Drug-Price-Compare',
         livepage: 'https://lsunny5.github.io/Drug-Price-Compare/'
     },
@@ -31,7 +31,7 @@ const PROJECTS = [
         tech: ['html5', 'css3', 'javascript'], 
         screenshot: 'images/HealthVitalAppSS.png', 
         alt: 'Child Health Vital Webspage ScreenShot',
-        description: 'A website that provides information on a child\'s health, such as immunizations, growth curves, and more.  This was inspired by my children as I am always looking for websites with health information for them.  This quiz is great for anyone interested in reading about child health.',
+        description: 'A website that provides information on a child\'s health, such as immunizations, growth curves, and more.  This was inspired by my children as I am always looking for websites with health information for them.  This site is great for anyone interested in reading about child health.',
         repo: 'https://github.com/LSunny5/ChildHealthVitalWebpage',
         livepage: 'http://people.brandeis.edu/~maylilyz/Sunny%20Lee%20-%20HW2/Health%20Vital%20Homepage.htm'
     },
