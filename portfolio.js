@@ -23,7 +23,7 @@ function logoClick() {
 }
 
 /*listening and checking for portfolio page button clicks*/
-function portfolioButtonClick() {   
+function portfolioButtonClick() {
     $('.portfolioSection').on('click', '.next', function (event) {
         event.preventDefault();
         projectNo++;
@@ -68,20 +68,20 @@ function createProjects(pNumber) {
             </div>
         </section>`);
 
-        for (let i = 0; i < PROJECTS[pNumber].tech.length; i++) {
-            if (PROJECTS[pNumber].tech[i] === "html5") {
-                $('.tList'+ pNumber).append(`<img src="images/tinyHTML5Logo.png" alt="HTML5 logo">`);
-                console.log('working?');
-            } else if (PROJECTS[pNumber].tech[i] === "css3") {
-                $('.tList'+ pNumber).append(`<img src="images/tinycsslogo.png" alt="CSS3 logo">`);
-            } else if (PROJECTS[pNumber].tech[i] === "javascript") {
-                $('.tList'+ pNumber).append(`<img src="images/tinyjavascriptlogo.png" alt="JavaScript logo">`);
-            } else if (PROJECTS[pNumber].tech[i] === "jquery") {
-                $('.tList'+ pNumber).append(`<img src="images/tinyjquerylogo.png" alt="JQuery Logo">`);
-            } else if (PROJECTS[pNumber].tech[i] === "android") {
-                $('.tList'+ pNumber).append(`<img src="images/AndroidRobot.png" alt="Android Logo">`);
-            }
-        };
+    //add technologies to each project
+    for (let i = 0; i < PROJECTS[pNumber].tech.length; i++) {
+        if (PROJECTS[pNumber].tech[i] === "html5") {
+            $('.tList' + pNumber).append(`<img src="images/tinyHTML5Logo.png" alt="HTML5 logo">`);
+        } else if (PROJECTS[pNumber].tech[i] === "css3") {
+            $('.tList' + pNumber).append(`<img src="images/tinycsslogo.png" alt="CSS3 logo">`);
+        } else if (PROJECTS[pNumber].tech[i] === "javascript") {
+            $('.tList' + pNumber).append(`<img src="images/tinyjavascriptlogo.png" alt="JavaScript logo">`);
+        } else if (PROJECTS[pNumber].tech[i] === "jquery") {
+            $('.tList' + pNumber).append(`<img src="images/tinyjquerylogo.png" alt="JQuery Logo">`);
+        } else if (PROJECTS[pNumber].tech[i] === "android") {
+            $('.tList' + pNumber).append(`<img src="images/AndroidRobot.png" alt="Android Logo">`);
+        }
+    };
 }
 
 /*actions to show portfolio page*/
