@@ -59,7 +59,7 @@ function createProjects(pNumber) {
     $('.portfolioBox').append(`
         <section class="portfolioSS">
             <h1 class ="pHeading">${PROJECTS[pNumber].title}</h1>
-            <figure class="techList ${pNumber}"></figure>
+            <figure class="tList${pNumber} techList"></figure>
             <img src="${PROJECTS[pNumber].screenshot}" alt="${PROJECTS[pNumber].alt}" class="ssImage">
             <p class="portfolioDescription tab">${PROJECTS[pNumber].description}</p>
             <div class="pageLinks">
@@ -67,23 +67,21 @@ function createProjects(pNumber) {
                 <a href="${PROJECTS[pNumber].livepage}" target='_blank'>Live Page</a>
             </div>
         </section>`);
-    
-    //adding icons for the technologies in the tech list
-    $('.techList').empty();
-    for (let i = 0; i < PROJECTS[pNumber].tech.length; i++) {
-        if (PROJECTS[pNumber].tech[i] === "html5") {
-            $('.techList').append(`<img src="images/tinyHTML5Logo.png" alt="HTML5 logo">`);
-        } else if (PROJECTS[pNumber].tech[i] === "css3") {
-            $('.techList').append(`<img src="images/tinycsslogo.png" alt="CSS3 logo">`);
-        } else if (PROJECTS[pNumber].tech[i] === "javascript") {
-            $('.techList').append(`<img src="images/tinyjavascriptlogo.png" alt="JavaScript logo">`);
-        } else if (PROJECTS[pNumber].tech[i] === "jquery") {
-            $('.techList').append(`<img src="images/tinyjquerylogo.png" alt="JQuery Logo">`);
-        } else if (PROJECTS[pNumber].tech[i] === "android") {
-            $('.techList').append(`<img src="images/AndroidRobot.png" alt="Android Logo">`);
-        }
-        console.log('printed');
-    };
+
+        for (let i = 0; i < PROJECTS[pNumber].tech.length; i++) {
+            if (PROJECTS[pNumber].tech[i] === "html5") {
+                $('.tList'+ pNumber).append(`<img src="images/tinyHTML5Logo.png" alt="HTML5 logo">`);
+                console.log('working?');
+            } else if (PROJECTS[pNumber].tech[i] === "css3") {
+                $('.tList'+ pNumber).append(`<img src="images/tinycsslogo.png" alt="CSS3 logo">`);
+            } else if (PROJECTS[pNumber].tech[i] === "javascript") {
+                $('.tList'+ pNumber).append(`<img src="images/tinyjavascriptlogo.png" alt="JavaScript logo">`);
+            } else if (PROJECTS[pNumber].tech[i] === "jquery") {
+                $('.tList'+ pNumber).append(`<img src="images/tinyjquerylogo.png" alt="JQuery Logo">`);
+            } else if (PROJECTS[pNumber].tech[i] === "android") {
+                $('.tList'+ pNumber).append(`<img src="images/AndroidRobot.png" alt="Android Logo">`);
+            }
+        };
 }
 
 /*actions to show portfolio page*/
