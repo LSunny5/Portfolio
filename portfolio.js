@@ -78,8 +78,14 @@ function createProjects(pNumber) {
             $('.tList' + pNumber).append(`<img src="images/tinyjavascriptlogo.png" alt="JavaScript logo">`);
         } else if (PROJECTS[pNumber].tech[i] === "jquery") {
             $('.tList' + pNumber).append(`<img src="images/tinyjquerylogo.png" alt="JQuery Logo">`);
-        } else if (PROJECTS[pNumber].tech[i] === "android") {
-            $('.tList' + pNumber).append(`<img src="images/AndroidRobot.png" alt="Android Logo">`);
+        } else if (PROJECTS[pNumber].tech[i] === "react") {
+            $('.tList' + pNumber).append(`<img src="images/tinyReactlogo.png" alt="React Logo">`);
+        } else if (PROJECTS[pNumber].tech[i] === "node") {
+            $('.tList' + pNumber).append(`<img src="images/tinynodelogo.png" alt="Node.js Logo">`);
+        } else if (PROJECTS[pNumber].tech[i] === "express") {
+            $('.tList' + pNumber).append(`<img src="images/tinyexpress.jpg" alt="Express Logo">`);
+        } else if (PROJECTS[pNumber].tech[i] === "postgresql") {
+            $('.tList' + pNumber).append(`<img src="images/tinypostgresql.png" alt="PostgreSQL Logo">`);
         }
     };
 }
