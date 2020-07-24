@@ -8,4 +8,4 @@ Come view my collection of projects!
 https://lsunny5.github.io/Portfolio/ 
 
 ## Technologies Used:
-HTML/CSS/JavaScript/jQuery
+React/Node.js/Express/PostgreSQL/HTML/CSS/JavaScript/jQuery/Android
