@@ -2,7 +2,7 @@
 
 This is Sunny Lee's 2020 Web Development Portfolio
 
-Come view her collection of projects!  
+Come view my collection of projects!  
 
 ## Live App Page:
 https://lsunny5.github.io/Portfolio/ 
