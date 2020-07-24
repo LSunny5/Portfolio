@@ -356,6 +356,7 @@ a:active{
     justify-content: space-around;
     align-items: center;
     padding: 1vh;
+    font-family: 'Artifika', serif;
 }
 
 .socialMediaLinks img {
@@ -421,7 +422,6 @@ footer a{
     /*portfolio*/
     .portfolioSS {
         width: 90%;
-        height: 78vh;
     }
 
     .techList{
@@ -548,7 +548,6 @@ footer a{
     /*portfolio*/
     .portfolioSS {
         width: 75%;
-        height: 100%;
     }
 
     .techList {
