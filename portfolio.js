@@ -60,6 +60,7 @@ function createProjects(pNumber) {
         <section class="portfolioSS">
             <h1 class ="pHeading">${PROJECTS[pNumber].title}</h1>
             <figure class="tList${pNumber} techList"></figure>
+            <p class="technologyList">${PROJECTS[pNumber].techlist}</p>
             <img src="${PROJECTS[pNumber].screenshot}" alt="${PROJECTS[pNumber].alt}" class="ssImage">
             <p class="portfolioDescription tab">${PROJECTS[pNumber].description}</p>
             <div class="pageLinks">
@@ -86,6 +87,8 @@ function createProjects(pNumber) {
             $('.tList' + pNumber).append(`<img src="images/tinyexpress.jpg" alt="Express Logo">`);
         } else if (PROJECTS[pNumber].tech[i] === "postgresql") {
             $('.tList' + pNumber).append(`<img src="images/tinypostgresql.png" alt="PostgreSQL Logo">`);
+        } else if (PROJECTS[pNumber].tech[i] === "android") {
+            $('.tList' + pNumber).append(`<img src="images/AndroidRobot.png" alt="PostgreSQL Logo">`);
         }
     };
 }
