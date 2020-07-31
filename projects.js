@@ -6,8 +6,8 @@ const PROJECTS = [
         title: 'Cachow', 
         tech: ['react', 'node', 'express', 'postgresql', 'html5', 'css3', 'javascript'], 
         techlist: 'Tech Used: React, Node.js, Express, PostgreSQL, HTML5, CSS3, JavaScript',
-        screenshot: 'images/checklater.png', 
-        alt: 'no screenshot available at this time',
+        screenshot: 'images/CachowHome.png', 
+        alt: 'Cachow Home Page',
         description: 'So many restaurants and so many sites to visit to see their menus, wouldn\'t it be nice to have all the menus at one site?  Cachow is a just that, a place to keep all your menus in one place!  I was inspired by family to create it as we are always spending lots of time to find the menus for take out. <br /><br />***If failed to fetch, please wait 1-2 min for server to start up then on refresh, app data will load properly.  Thank you!***',
         repo: 'https://github.com/LSunny5/CaChow-Client', 
         livepage: 'https://cachow.vercel.app/'
